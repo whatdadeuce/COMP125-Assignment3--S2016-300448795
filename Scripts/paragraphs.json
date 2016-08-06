@@ -1,0 +1,22 @@
+{
+
+    "paragraphs":[
+        {
+        "index":"0",
+        "data":"<h2 class='display-1'>About Me</h2><p class='lead'>Architectural Technology Graduate with five years of experience working for an Architectural Firm and currently in school studying Software Engineering Technology.</p><hr class='m-y-md'><p>Passionate, self motivated, ambitious and enjoys learning especially those of personal interest.</p>"
+        },
+        {
+        "index":"1",
+        "data":"<div class='panel'><h1>Grocery Interior - Bakery Department</h1><p>Interior rendering of proposed Bakery department design</p></div>"    
+        },
+        {
+        "index":"2",
+        "data":"<div class='panel'><h1>Grocery Interior - Dairy Department</h1><p>Interior rendering of proposed Dairy department design</p></div>"
+        },
+        {
+        "index":"3",
+        "data": "<div class='panel'><h1>Grocery Interior - Produce Department</h1><p>Interior rendering of proposed Produce department design</p></div>"
+        }
+    ]
+    
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<!--
+ * FileName: Projects.html
+ * 
+ * @author Kenneth Bato
+ * @date June 10, 2016
+ * 
+ * StudentID: 300448795
+ * website: portfolio-assignment2.azurewebsites.net
+ * @description About Me page
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link rel="stylesheet" href="Content/css/bootstrap.css">
+    <link rel="stylesheet" href="Content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Content/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Content/app.css">
+</head>
+
+<body>
+    <!--Nav menu-->
+    <div class="wrapper">
+        <div class="row">
+            <div class="column nav-side-menu col-lg-2 col-md-2 col-sm-3">
+                <!--Responsive logo/brand to scale based on screen size. Dedicated fixed size for mobile screens -->
+                <div class="brand"><img class="img-responsive hidden-xs" src="Assets/Logo.png" alt="Logo"><img id="smallLogo" class="hidden-lg hidden-md hidden-sm" src="Assets/Logo.png" alt="Logo"> Kenneth's Portfolio</div>
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li class="active">
+                            <a href="index.html">
+                                <i class="glyphicon glyphicon-user"></i> Profile
+                            </a>
+                        </li>
+                        <li data-toggle="collapse" data-target="#service" class="collapsed">
+                            <a href="Projects.html"><i class="fa fa-folder-o fa-lg"></i> Projects</a>
+                        </li>
+                        <li>
+                            <a href="Contact.html">
+                                <i class="fa fa-phone fa-lg"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/Nav menu end-->
+            <div class="container-fluid">
+                <div class="column col-lg-offset-2 col-md-offset-2 col-sm-offset-3" id="mainContent">
+                    <!--Page Content-->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="page-header" id="customFont">
+                                <h1>Profile</h1>
+                            </div>
+                            <!--Profile image-->
+                            <div class="column col-lg-2 col-md-2 col-sm-2 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-3">
+                                <img src="Assets/profile.png" class="img-thumbnail img-circle ">
+                            </div>
+                            <!--About Me information container/panel-->
+                            <div class="container col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                <div class="panel">
+                                    <div class="panel-body" id="aboutMe">
+                                        <!--About me content inserted here from javascript-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Page Content end-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--JavaScript Section-->
+    <script src="Scripts/jquery-2.2.4.min.js "></script>
+    <script src="Scripts/bootstrap.min.js "></script>
+    <script src="Scripts/app.js "></script>
+</body>
+
+</html>

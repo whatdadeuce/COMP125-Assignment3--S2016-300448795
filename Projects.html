@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+ * FileName: Projects.html
+ * 
+ * @author Kenneth Bato
+ * @date June 10, 2016
+ * 
+ * StudentID: 300448795
+ * website: portfolio-assignment2.azurewebsites.net
+ * @description Projects page
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <link rel="stylesheet" href="Content/css/bootstrap.css">
+    <link rel="stylesheet" href="Content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Content/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Content/app.css">
+</head>
+
+<body>
+    <!--Nav menu-->
+    <div class="wrapper">
+        <div class="row">
+            <div class="column nav-side-menu col-lg-2 col-md-2 col-sm-3">
+                <!--Responsive logo/brand to scale based on screen size. Dedicated fixed size for mobile screens -->
+                <div class="brand"><img class="img-responsive hidden-xs" src="Assets/Logo.png" alt="Logo"><img id="smallLogo" class="hidden-lg hidden-md hidden-sm" src="Assets/Logo.png" alt="Logo"> Kenneth's Portfolio</div>
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li>
+                            <a href="index.html">
+                                <i class="glyphicon glyphicon-user"></i> Profile
+                            </a>
+                        </li>
+                        <li data-toggle="collapse" data-target="#service" class="collapsed active">
+                            <a href="Projects.html"><i class="fa fa-folder-open fa-lg"></i> Projects</a>
+                        </li>
+                        <li>
+                            <a href="Contact.html">
+                                <i class="fa fa-phone fa-lg"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/Nav menu end-->
+            <div class="container-fluid">
+                <div class="column col-lg-offset-2 col-md-offset-2 col-sm-offset-3" id="mainContent">
+                    <!--Page Content-->
+                    <div class="page-header" id="customFont">
+                            <h1>Projects</h1>
+                        </div>
+                    <div class="container col-lg-10 col-md-10 col-sm-10">
+                        <!--Start of image carousel panel-->
+                        <div class="panel" id="carouselPanel">
+                            <div class="panel-heading">
+                                <h3>Architectural Work</h3>
+                            </div>
+                            <div id="carousel-id" class="carousel slide panel-body" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+                                    <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+                                    <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                <!--First Image-->
+                                    <div class="item">
+                                        <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="Assets/Bakery.jpg">
+                                        <div class="container">
+                                            <div class="carousel-caption" id="projectDescBakery">
+                                               <!--Javascript content goes here--> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Second Image-->
+                                    <div class="item">
+                                        <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="Assets/Dairy.jpg">
+                                        <div class="container">
+                                            <div class="carousel-caption" id="projectDescDairy">
+                                               <!--Javascript content goes here-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Third Image active default-->
+                                    <div class="item active">
+                                        <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="Assets/Produce.jpg">
+                                        <div class="container">
+                                            <div class="carousel-caption" id="projectDescProduce">
+                                                <!--Javascript content goes here-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                                <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                            </div>
+                        </div>
+                        <!--/End of image carousel panel-->
+                    </div>
+                    <!--/Page Content end-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--JavaScript Section-->
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+
+</html>

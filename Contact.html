@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+ * FileName: Projects.html
+ * 
+ * @author Kenneth Bato
+ * @date June 10, 2016
+ * 
+ * StudentID: 300448795
+ * website: portfolio-assignment2.azurewebsites.net
+ * @description Contact page
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="Content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Content/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Content/app.css">
+</head>
+
+<body>
+    <!--Nav menu-->
+    <div class="wrapper">
+        <div class="row">
+            <div class="column nav-side-menu col-lg-2 col-md-2 col-sm-3">
+                <!--Responsive logo/brand to scale based on screen size. Dedicated fixed size for mobile screens -->
+                <div class="brand"><img class="img-responsive hidden-xs" src="Assets/Logo.png" alt="Logo"><img id="smallLogo" class="hidden-lg hidden-md hidden-sm" src="Assets/Logo.png" alt="Logo"> Kenneth's Portfolio</div>
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li>
+                            <a href="index.html">
+                                <i class="glyphicon glyphicon-user"></i> Profile
+                            </a>
+                        </li>
+                        <li data-toggle="collapse" data-target="#service" class="collapsed">
+                            <a href="Projects.html"><i class="fa fa-folder-o fa-lg"></i> Projects</a>
+                        </li>
+                        <li class="active">
+                            <a href="Contact.html">
+                                <i class="fa fa-phone fa-lg"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/Nav menu end-->
+            <div class="container-fluid">
+                <div class="column col-lg-offset-2 col-md-offset-2 col-sm-offset-3" id="mainContent">
+                    <!--Page Content-->
+                    <div class="page-header" id="customFont">
+                        <h1>Contact Me</h1>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-offset-1 col-md-9 col-sm-9">
+                                <!--Form Header-->
+                                <!--Form starts. Action set to return to index page upon submission of form-->
+                                <form id="contactForm" action="POST" role="form">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="sample@gmail.com" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactNumber">Contact Number</label>
+                                        <input type="tel" class="form-control" id="contactNumber" placeholder="(123) 123-4567" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Your Message</label>
+                                        <textarea cols="3" rows="3" class="form-control" id="message" placeholder="Enter Your Message here..." required></textarea>
+                                    </div>
+                                    <div class="text-right">
+                                        <a id="cancelButton" href="index.html" class="btn btn-warning">Cancel</a>
+                                        <button id="sendButton" class="btn btn-primary">Send</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--/Page Content end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--JavaScript Section-->
+        <script src="Scripts/jquery-2.2.4.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script src="Scripts/app.js"></script>
+</body>
+
+</html>
